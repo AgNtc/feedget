@@ -4,7 +4,7 @@ import { PrismaFeedbackRepository } from "./repositories/prisma/prisma-feedbacks
 import { SubmitFeedbackUseCase } from "./use-cases/submit-feedback-use-case";
 
 export const routes = express.Router();
-routes.post("/feedback", async (req, res) => {  
+routes.post("/feedbacks", async (req, res) => {  
   const { type, comment, screenshot } = req.body;
 
   const PrismaFeedbacksRepository = new PrismaFeedbackRepository();
