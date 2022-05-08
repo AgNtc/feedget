@@ -29,7 +29,7 @@ export function FeedbackContentStep({
 
     setIsSendingFeedback(true);
 
-   await api.post('/feedback', {
+   await api.post('/feedbacks', {
       type: feedbackType,
       comment,
       screenshot,
